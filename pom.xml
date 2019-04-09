@@ -80,7 +80,7 @@
                     </properties>
                     <!-- define which suite file to run -->
                     <suiteXmlFiles>
-                        <suiteXmlFile>$(suiteXmlFile)</suiteXmlFile>
+                        <suiteXmlFile>src/test/testng.xml</suiteXmlFile>
                     </suiteXmlFiles>
                 </configuration>
             </plugin>
@@ -91,7 +91,6 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.encoding>UTF-8</maven.compiler.encoding>
-        <suiteXmlFile>/Users/sxl/Documents/IdeaProjects/auto/testng.xml</suiteXmlFile>
     </properties>
 
 </project>
