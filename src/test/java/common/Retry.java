@@ -1,0 +1,20 @@
+package common;
+
+import org.testng.IRetryAnalyzer;
+import org.testng.ITestResult;
+
+public class Retry implements IRetryAnalyzer{
+	int reTryCount = 1;
+	int index = 1;
+	
+	@Override
+	public boolean retry(ITestResult iTestResult) {
+		if(index <= reTryCount){
+			index++;
+			return true;
+		}
+		return false;
+	}
+
+	
+}

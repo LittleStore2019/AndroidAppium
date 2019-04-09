@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+ 
+<suite name="apiTestSuite" parallel="false" > 
+	<listeners>
+	    <listener class-name="listeners.TestListener"></listener>
+	    <listener class-name="listeners.ReRun"></listener>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+	</listeners>
+	<test name="automationUnNormalTests" >
+    	<classes>
+			<class name="testcases.home.HomeClickAccountTabUnlogin"/>
+			<class name="testcases.home.HomeClickInvestmentTab"/>
+      	</classes>
+  	</test> 
+</suite>
