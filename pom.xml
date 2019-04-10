@@ -80,7 +80,7 @@
                     </properties>
                     <!-- define which suite file to run -->
                     <suiteXmlFiles>
-                        <suiteXmlFile>src/test/testng.xml</suiteXmlFile>
+                        <suiteXmlFile>testng.xml</suiteXmlFile>
                     </suiteXmlFiles>
                 </configuration>
             </plugin>
